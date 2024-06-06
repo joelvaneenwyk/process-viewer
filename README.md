@@ -11,7 +11,7 @@ It can be run on the following platforms:
 - macOS
 - FreeBSD
 - Windows
-    For cross-compilation to Windows, you can attempt to use [rust-crosscompile | Docker Hub](https://hub.docker.com/r/etrombly/rust-crosscompile).
+  For cross-compilation to Windows, you can attempt to use [rust-crosscompile | Docker Hub](https://hub.docker.com/r/etrombly/rust-crosscompile).
 
 Please run it in `release` mode for considerably better performance:
 
