@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: cspell-process-viewer-dictionary
+    path: ./.github/cspell-process-viewer-dictionary.txt
+    addWords: true
+dictionaries:
+  - cspell-process-viewer-dictionary
+words: []
+ignoreWords: []
+import: []

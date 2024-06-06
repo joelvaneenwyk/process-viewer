@@ -1,0 +1,17 @@
+# Custom Dictionary Words
+armv
+autocfg
+Bsource
+clippy
+deque
+gnueabihf
+gobject
+hicolor
+libc
+libgtk
+ntapi
+pango
+pixbuf
+rustc
+rustfmt
+serde
