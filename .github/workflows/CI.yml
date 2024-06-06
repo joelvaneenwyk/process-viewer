@@ -1,7 +1,8 @@
 on:
   push:
-    branches: [master]
+    branches: [main, develop]
   pull_request:
+    branches: [main, develop]
 
 name: CI
 
@@ -9,7 +10,11 @@ jobs:
   rustfmt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
