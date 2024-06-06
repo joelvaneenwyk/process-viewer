@@ -1,15 +1,19 @@
-# process-viewer [![Build Status](https://travis-ci.org/GuillaumeGomez/process-viewer.png?branch=master)](https://travis-ci.org/GuillaumeGomez/process-viewer)
+# process-viewer
+
+[![CI Build Status](https://github.com/joelvaneenwyk/process-viewer/actions/workflows/CI.yml/badge.svg)](https://github.com/joelvaneenwyk/process-viewer/actions/workflows/CI.yml)
+
 A process viewer GUI in rust. It provides current status of your processes (cpu and memory usage) and your system (usage of every core and of your RAM, and the temperature of your components if this information is available).
 
 It can be run on the following platforms:
 
- * Linux
- * Raspberry
- * macOS
- * FreeBSD
- * Windows (for cross-compilation to Windows, you can give a try to https://hub.docker.com/r/etrombly/rust-crosscompile)
+- Linux
+- Raspberry
+- macOS
+- FreeBSD
+- Windows
+    For cross-compilation to Windows, you can attempt to use [rust-crosscompile | Docker Hub](https://hub.docker.com/r/etrombly/rust-crosscompile).
 
-Please run it in release mode to have good performance:
+Please run it in `release` mode for considerably better performance:
 
 ```bash
 cargo run --release
@@ -21,11 +25,11 @@ or to install it as binary
 cargo install process_viewer
 ```
 
-### Building/running on Linux, MacOS
+## Building/running on Linux, MacOS
 
 Take a look at the [gtk-rs installation guide](https://gtk-rs.org/gtk4-rs/stable/latest/book/installation.html) to know how install GTK dependencies.
 
-### Running on Raspberry
+## Running on Raspberry
 
 It'll be difficult to build on Raspberry pi directly. A good way-around is to be build on Linux before sending it to your Raspberry pi:
 
